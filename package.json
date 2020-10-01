@@ -1,0 +1,45 @@
+{
+  "name": "keyboard-shortcuts-practice",
+  "version": "1.0.0",
+  "description": "[Techtonica](https://techtonica.org) is a nonprofit that provides free tech training with stipends and job placement to women and non-binary adults with low incomes.",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run dev",
+    "start:prod": "NODE_ENV=production node app.js",
+    "dev": "NODE_ENV=development nodemon",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Techtonica/keyboard-shortcuts-practice.git"
+  },
+  "author": "Techtonica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Techtonica/keyboard-shortcuts-practice/issues"
+  },
+  "homepage": "https://github.com/Techtonica/keyboard-shortcuts-practice#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "http-server": "^0.11.1",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "path": "^0.12.7",
+    "pg": "^8.3.3",
+    "pg-hstore": "^2.3.3",
+    "request": "^2.88.0",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  },
+  "nodemonConfig": {
+    "execMap": {
+      "watch": "js,ejs,json",
+      "js": "node --unhandled-rejections=strict"
+    }
+  }
+}
